@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% block achievactive %}active{% endblock achievactive %}
+{% block body %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/ducat.jpg" class="d-block w-100 " alt="oops something went wrong"  height="670">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/essay.jpg" class="d-block w-100" alt="oops something went wrong" height="570">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/4th.jpg" class="d-block w-100" alt="oops something went wrong" height="570">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="card   mt-5">
+      <div class="card-header bg-white">
+        <h1 class="text-center">Skills</h1>
+      </div>
+
+      #key Skills
+      <div class="card">
+        <h3 class="text-center mt-4">Key Skills</h3>
+        <h5 class="mx-3">Data Cleaning</h5>
+        <p class="mx-3">Data cleaning is the process of fixing or removing incorrect, corrupted, 
+          incorrectly formatted, duplicate, or incomplete data within a dataset.
+          When combining multiple data sources, there are many opportunities for data to be duplicated
+          or mislabeled. If data is incorrect, outcomes and algorithms are unreliable, 
+          even though they may look correct. There is no one absolute way to prescribe 
+          the exact steps in the data cleaning process because the processes will vary from dataset to dataset. 
+          But it is crucial to establish a template for your data cleaning process so you know you are doing it 
+          the right way every time...
+          <a type="button" href="https://www.tableau.com/learn/articles/what-is-data-cleaning" class="btn btn-primary">Read More...</a>
+        </p>
+
+        <h5 class="mx-3 mt-3">Data Visualization</h5>
+        <p class="mx-3">Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data. Additionally, it provides an excellent way for employees or business owners to present data to non-technical audiences without confusion.
+          In the world of Big Data, data visualization tools and technologies are essential to analyze massive 
+          amounts of information and make data-driven decisions...
+          <a type="button" href="https://www.tableau.com/learn/articles/data-visualization" class="btn btn-primary">Read More...</a>
+        </p>
+
+        <h5 class="mx-3 mt-3">Exploratory Data Analysis</h5>
+        <p class="mx-3">Exploratory Data Analysis refers to the critical process of performing initial investigations on data so as to discover patterns,to spot anomalies,to test hypothesis and to check assumptions with the help of summary statistics and graphical representations...
+          <a type="button" href="https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15" class="btn btn-primary">Read More...</a>
+        </p>
+
+        <h5 class="mx-3 mt-3">Supervised Machine Learning</h5>
+        <p class="mx-3">Supervised learning is the types of machine learning in which machines are trained using well "labelled" training data, and on basis of that data, machines predict the output. The labelled data means some input data is already tagged with the correct output.
+
+          In supervised learning, the training data provided to the machines work as the supervisor that teaches the machines to predict the output correctly. It applies the same concept as a student learns in the supervision of the teacher... 
+          <a type="button" href="https://www.javatpoint.com/supervised-machine-learning" class="btn btn-primary">Read More...</a>
+        </p>
+          
+        <h5 class="mx-3 mt-3">Unsupervised Machine Learning</h5>
+        <p class="mx-3">As the name suggests, unsupervised learning is a machine learning technique in which models are not supervised using training dataset. Instead, models itself find the hidden patterns and insights from the given data. It can be compared to learning which takes place in the human brain while learning new things... 
+          <a type="button" href="https://www.javatpoint.com/unsupervised-machine-learning" class="btn btn-primary">Read More...</a>
+        </p>
+
+        <h5 class="mx-3 mt-3">Web Scraping</h5>
+        <p class="mx-3">Web scraping is the process of using bots to extract content and data from a website.Unlike screen scraping, which only copies pixels displayed onscreen, web scraping extracts underlying HTML code and, with it, data stored in a database. The scraper can then replicate entire website content elsewhere... 
+          <a type="button" href="https://www.imperva.com/learn/application-security/web-scraping-attack" class="btn btn-primary">Read More...</a>
+        </p>
+    
+        </div>
+
+
+      <div class="card">
+        <h3 class="text-center mt-4">Technical Skills</h3>
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#python">Python</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#numpy">Numpy</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#pandas">Pandas</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#matplt">Matplotlib</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#sklearn">Scikit-Learn</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#opencv">openCV</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#django">Django</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#tkinter">Tkinter</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#excel">MS Excel</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#tableau">Tableau</button>
+          <button type="button" class="btn btn-dark my-1" data-bs-toggle="modal" data-bs-target="#sql">SQL</button>
+        </div>
+
+        <!-- Modals starts -->
+        <div class="container">
+
+        <div class="modal fade" id="python" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Python</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="numpy" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Numpy</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/NumPy" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="pandas" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Pandas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Pandas_(software)" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="matplt" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Matplotlib</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Matplotlib" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="sklearn" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Scikit-Learn</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support-vector machines...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Scikit-learn" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="opencv" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >opencCV</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>OpenCV is a library of programming functions mainly for real-time computer vision. Originally developed by Intel, it was later supported by Willow Garage, then Itseez. The library is cross-platform and licensed as free and open-source software under Apache License 2...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/OpenCV" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="tkinter" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Tkinter</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Tkinter is a Python binding to the Tk GUI toolkit. It is the standard Python interface to the Tk GUI toolkit, and is Python's de facto standard GUI. Tkinter is included with standard Linux, Microsoft Windows and macOS installs of Python. The name Tkinter comes from Tk interface...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Tkinter" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="django" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Django</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Django is a free and open-source, Python-based web framework that follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Django_(web_framework)" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="excel" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >MS Excel</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS, Android and iOS. It features calculation or computation capabilities, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications. Excel forms part of the Microsoft Office suite of software...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Microsoft_Excel" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="tableau" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Tableau</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Tableau Software is an American interactive data visualization software company focused on business intelligence. It was founded in 2003 in Mountain View, California, and is currently headquartered in Seattle, Washington. In 2019 the company was acquired by Salesforce for $15.7 billion...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/Tableau_Software" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="sql" tabindex="-1"  aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >SQL</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Structured Query Language, abbreviated as SQL, is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="">Close</button>
+                <a type="button" href="https://en.wikipedia.org/wiki/SQL" class="btn btn-primary" >More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!-- Modals end -->
+
+      </div>
+      
+    </div>
+  </div>
+
+  
+  
+{% endblock body %}

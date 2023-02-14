@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block aboutactive %}active{% endblock aboutactive %}
+
+{% block css %}
+
+<style>
+    .container {
+        min-height:90vh ;
+    }
+</style>
+
+{% endblock css %}
+
+{% block body %}
+<div class="container ">
+<h1 class="text-center my-4">My Projects</h1>
+{% for work in works %}
+<div class="card mt-3">
+  <div class="card-header">
+    <h4>{{work.title}}</h4>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{work.description| slice:200}}... </p>
+    <a href="/workposts/{{work.slug}}" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endblock body %}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block contactactive %}active{% endblock contactactive %}
+
+{% block css %}
+
+<style>
+    .container {
+        min-height:90vh ;
+    }
+</style>
+
+{% endblock css %}
+
+{% block body %}
+
+<div class="container my-5">
+    <h1 class="text-center ">Contact Me</h1>
+    <form action="/contact/" method = "POST" >
+      {% csrf_token %}
+        <div class="mb-3 mt-2">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name"  aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">phone</label>
+            <input type="phone" class="form-control" id="phone" name="phone" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            
+        </div>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Say some words about us</label>
+            <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+          </div>
+       
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+
+{% endblock body %}

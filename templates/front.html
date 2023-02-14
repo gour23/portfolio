@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block homeactive %}active{% endblock homeactive %}
+
+
+{% block body  %}
+
+<div class="container-flud bg-black text-white">
+
+<div class="container   px-0">
+  <div id="carouselExampleIndicators" class="carousel slide ml-0" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/image1.jpg/" class="d-block w-100" alt="oops something wrong...." height="500">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/image2.jpg/" class="d-block w-100 " alt="oops something wrong...." height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/image4.jpg/" class="d-block w-100" alt="oops something wrong...." height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/image6.jpg/" class="d-block w-100" alt="oops something wrong...." height="500">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<h2 class="text-center mt-5 mb-3 ">My Work</h2>
+<div class="container my-4 ">
+<div class="card mb-3 text-white bg-black">
+  <img src="/static/img/card1.jpg" class="card-img-top "  alt="..." height="300px" width="1120px" >
+  <div class="card-body">
+    <p class="card-text ">I have created many projects on different tools and used my skill set like Data
+      Analytics , Data Science and Machine Learning , Python and its different libraries like (Numpy , Pandas ,
+      Matplotlib , tkinter , django etc).</p>
+    <p class="card-text">Here you can have a look on my work .</p>
+    <a href="/work" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+</div>
+
+<h2 class=" text-center mt-5 mb-3">My Achievements</h2>
+<div class="container my-4">
+  <div class="card mb-3 text-white bg-black">
+    <img src="/static/img/achievmnt.jpg" class="card-img-top "  alt="image loading..." height="300px" width="1120px" >
+    <div class="card-body">
+      <p class="card-text">Have 6 month of Industrial training in Data Science with Python.
+        and extensive knowledge in fields like Data visualization and preprocessing , Data cleaning ,Computer Vision and NLP. and have skills with python libraries like Numpy , Pandas , Matplotlib , Seaborn ,sklearn, etc
+        Have great understanding with database (MySql) . and good communication skills.</p>
+      <p class="card-text">Here you can have a look on my Achievements and skills .</p>
+      <a href="/achievments" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+  </div>
+
+<div class="container mt-3">
+  <div class="card-group">
+    <div class="card text-white bg-black">
+      <img src="/static/img/tableau.png" class="card-img-top" alt="..." width="300" height="300">
+      <div class="card-body">
+        <h5 class="card-title">Tableau Dashboards</h5>
+        <p class="card-text">To see the Amazing Dashboards visit here...</p>
+        <a href="https://public.tableau.com/app/profile/abdullah2013" class="btn btn-primary">Visit </a>
+
+      </div>
+    </div>
+    <div class="card text-white bg-black ">
+      <img src="/static/img/github.png" class="card-img-top " alt="..." width="300" height="300">
+      <div class="card-body ">
+        <h5 class="card-title">GitHub</h5>
+        <p class="card-text">To check my github Account visit here...</p>
+        <a href="https://github.com/gour23" class="btn btn-primary">Visit </a>
+      </div>
+    </div>
+    <div class="card text-white bg-black">
+      <img src="/static/img/lin.png" class="card-img-top" alt="..." width="300" height="300">
+      <div class="card-body">
+        <h5 class="card-title">Linkedin</h5>
+        <p class="card-text">To check my Linkedin Account visit here....</p>
+          <a href="https://www.linkedin.com/in/abdullah-929b791b9/" class="btn btn-primary">Visit </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock body %}
